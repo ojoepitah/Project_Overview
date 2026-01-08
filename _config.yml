@@ -3,4 +3,7 @@ logo: Dashboard_Screenshot.jpeg
 description: Designed and queried a relational sales database using SQL Server. Implemented joins, CTEs, window functions, and time-based aggregations to analyse revenue trends, top-performing products, and customer behaviour.
 #show_downloads: true
 #google_analytics:
+aux_links:
+  "Interact with Dashboard here":
+    - "https://github.com/ojoepitah/sql-sales-analysis"
 theme: jekyll-theme-minimal
