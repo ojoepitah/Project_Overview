@@ -21,6 +21,14 @@ The dataset includes a wide range of attributes grouped into the following categ
 
 #### Sales & Transaction Details
 
+| Column Name | Description |
+|-------------|-------------|
+| Car_id | Unique identifier for each vehicle |
+| Date | Transaction date |
+| Price ($) | Sale price per vehicle |
+| Units Sold | Derived sales quantity |
+
+
 | Car_id | Date | Price ($) | Units sold (derived) |
 
 |--------|------|-----------|----------------------|
