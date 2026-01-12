@@ -22,18 +22,20 @@ The dataset includes a wide range of attributes grouped into the following categ
 #### Sales & Transaction Details
 
 | Car_id | Date | Price ($) | Units sold (derived) |
+
 |--------|------|-----------|----------------------|
 
 #### Customer Attributes
 
 | Customer Name| Gender| Annual Income| Phone|
+
 |--------------|-------|--------------|------|
 
 #### Vehicle Information
 
 | Company| Model| Body Style| Engine| Transmission| Color|
 |--------|------|-----------|-------|-------------|------|
-
+|        |      |           |       |             |      |
 #### Dealer & Location Details
 
 |Dealer_Name| Dealer_No| Dealer_Region|
