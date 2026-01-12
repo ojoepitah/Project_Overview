@@ -28,26 +28,33 @@ The dataset includes a wide range of attributes grouped into the following categ
 | Price ($) | Sale price per vehicle |
 | Units Sold | Derived sales quantity |
 
-
-| Car_id | Date | Price ($) | Units sold (derived) |
-
-|--------|------|-----------|----------------------|
-
 #### Customer Attributes
 
-| Customer Name| Gender| Annual Income| Phone|
-
-|--------------|-------|--------------|------|
+| Column Name     | Description |
+|-----------------|-------------|
+| Customer Name   | Full name of customer |
+| Gender          | Gender (Male/Female) |
+| Annual Income   | Customer’s reported annual income |
+| Phone           | Customer contact phone number |
 
 #### Vehicle Information
 
-| Company| Model| Body Style| Engine| Transmission| Color|
-|--------|------|-----------|-------|-------------|------|
-|        |      |           |       |             |      |
+| Column Name   | Description |
+|---------------|-------------|
+| Company       | Brand of the vehicle (e.g., Ford, BMW, Nissan) |
+| Model         | Specific vehicle model name |
+| Body Style    | e.g Sedan, SUV, Hatchback, Passenger |
+| Engine        | DoubleÂ Overhead Camshaft, Overhead Camshaft |
+| Transmission  | Manual or Automatic |
+| Color         | Exterior colour of the vehicle at the time of sale |
+
 #### Dealer & Location Details
 
-|Dealer_Name| Dealer_No| Dealer_Region|
-|--------|------|-----------|
+| Column Name   | Description |
+|---------------|-------------|
+| Dealer_Name   | Dealership of Purchase |
+| Dealer_No     | Unique identifier assigned to each dealer |
+| Dealer_Region | sales territory where the dealer operates |
 
 These fields enable multi-dimensional analysis across time, vehicle characteristics, customer segments, and dealer regions.
 
@@ -55,8 +62,15 @@ These fields enable multi-dimensional analysis across time, vehicle characterist
 
 To enable robust time-intelligence analysis, a dedicated Date Table was created using DAX.  The Date table includes the following derived attributes:
 
-| Year| Month| MonthNo.| WeekNo.| Year Week| Year WeekSort|
-|-----|------|---------|--------|----------|--------------|
+| Column Name   | Description |
+|---------------|-------------|
+| Year| 2022,2023
+| Month| Car Purchase Month of the Year |
+| MonthNo.| Jan=1, Feb=2, etc.
+|WeekNo.| from 1 to 52
+| Year Week| 2022-W1 to 2022-W52 and 2023-W1 to 2023-W52 |
+| Year WeekSort| 202201 to 202252, 202301 to 202352 for sorting purpose |
+
 
 This structure supports:
  - YTD, MTD, and YOY calculations
